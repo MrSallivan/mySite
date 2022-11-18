@@ -29,6 +29,9 @@ img {
 
 a {
   text-decoration: none;
+  &:focus{
+    outline: none;
+  }
 }
 
 .site-container {
@@ -105,3 +108,4 @@ a {
 .page--ios .dis-scroll {
   position: relative;
 }
+

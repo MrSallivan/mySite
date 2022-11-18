@@ -66,13 +66,24 @@
     display: flex;
     justify-content: flex-end;
     color: var(--main-text);
+    gap: 20px;
   }
   // .nav__item
   &__item {
     color: inherit;
+
+    &:hover {
+      outline: 2px solid var(--main-text);
+    }
   }
   // .nav__link
   &__link {
+    display: block;
+    padding: 5px;
     color: inherit;
+
+    &:focus {
+      outline: 2px solid var(--main-text);
+    }
   }
 }

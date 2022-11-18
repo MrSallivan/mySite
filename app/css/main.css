@@ -74,6 +74,9 @@ img {
 a {
   text-decoration: none;
 }
+a:focus {
+  outline: none;
+}
 
 .site-container {
   overflow: hidden;
@@ -229,11 +232,24 @@ a {
   -ms-flex-pack: end;
   justify-content: flex-end;
   color: var(--main-text);
+  gap: 20px;
 }
 .nav__item {
   color: inherit;
 }
+.nav__item:hover {
+  outline: 2px solid var(--main-text);
+}
 .nav__link {
+  display: block;
+  padding: 5px;
   color: inherit;
+}
+.nav__link:focus {
+  outline: 2px solid var(--main-text);
+}
+
+.main {
+  background-color: #0d1117;
 }
 /*# sourceMappingURL=main.css.map */
