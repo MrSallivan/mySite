@@ -50,6 +50,39 @@
     z-index: 1;
     padding-top: 40px;
   }
+  &__cv {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    color: var(--second-text);
+
+    &::before {
+      position: absolute;
+      left: 2px;
+      bottom: -5px;
+      background-color: var(--main-text);
+      display: block;
+      content: "";
+      height: 2px;
+      width: 0%;
+      transition: width 0.3s ease-in-out;
+    }
+    &:hover:before {
+      width: 100%;
+    }
+  }
+
+  &__social {
+    align-self: center;
+  }
+
+  &__social-wrap {
+    margin-top: 50px;
+    width: 100%;
+    gap: 200px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* анимация */
@@ -82,8 +115,44 @@
     padding: 5px;
     color: inherit;
 
+    &_bold {
+      font-weight: 700;
+    }
+
     &:focus {
       outline: 2px solid var(--main-text);
     }
+  }
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+  // .social__item
+  &__item {
+  }
+  // .social__link
+  &__link {
+  }
+  // .social__link--fb
+  &__link--git {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../../img/svg/Icons-github.svg);
+  }
+  // .social__link--vk
+  &__link--inst {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../../img/svg/Icons-instagram.svg);
+  }
+  // .social__link--tw
+  &__link--tw {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../../img/svg/Icons-twitter.svg);
   }
 }
