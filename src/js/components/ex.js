@@ -10,8 +10,8 @@ let canvas = document.getElementById('canvas'),
 
 let canvas2 = document.createElement('canvas'),
   ctx2 = canvas2.getContext('2d');
-canvas2.width = 50;
-canvas2.height = 50;
+canvas2.width = 10;
+canvas2.height = 10;
 let half = canvas2.width / 2,
   gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
 gradient2.addColorStop(0.025, '#e4426e');
