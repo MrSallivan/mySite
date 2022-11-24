@@ -464,8 +464,27 @@ a:focus {
 }
 
 .main {
-  background-color: #050D19;
+  background-color: #050d19;
   height: 100vh;
+  padding: 50px 0;
   color: var(--main-text);
+}
+.main__header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  letter-spacing: -0.03em;
+  margin-bottom: 50px;
+}
+.main__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.card {
+  width: 400px;
 }
 /*# sourceMappingURL=main.css.map */

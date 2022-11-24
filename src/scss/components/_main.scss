@@ -1,55 +1,64 @@
 .main {
-  background-color: #050D19;
+  background-color: #050d19;
   height: 100vh;
+  padding: 50px 0;
   color: var(--main-text);
-		// .main__container
-		&__container {
-		}
-		// .main__header
-		&__header {
-		}
-		// .main__content
-		&__content {
-		}
-		// .main__list
-		&__list {
-		}
-		// .main__item
-		&__item {
-		}
+  // .main__container
+  &__container {
+  }
+  // .main__header
+  &__header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 125%;
+    letter-spacing: -0.03em;
+    margin-bottom: 50px;
+  }
+  // .main__content
+  &__content {
+  }
+  // .main__list
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  // .main__item
+  &__item {
+  }
 }
-.container {
-}
-.list-reset {
-}
+
+
 .card {
-		// .card__image
-		&__image {
-		}
-		// .card__img
-		&__img {
-		}
-		// .card__content
-		&__content {
-		}
-		// .card__title
-		&__title {
-		}
-		// .card__technologic-tags
-		&__technologic-tags {
-		}
-		// .card__desc
-		&__desc {
-		}
-		// .card__buttons
-		&__buttons {
-		}
-		// .card__code
-		&__code {
-		}
-		// .card__demo
-		&__demo {
-		}
+  width: 400px;
+
+  // .card__image
+  &__image {
+  }
+  // .card__img
+  &__img {
+  }
+  // .card__content
+  &__content {
+  }
+  // .card__title
+  &__title {
+  }
+  // .card__technologic-tags
+  &__technologic-tags {
+  }
+  // .card__desc
+  &__desc {
+  }
+  // .card__buttons
+  &__buttons {
+  }
+  // .card__code
+  &__code {
+  }
+  // .card__demo
+  &__demo {
+  }
 }
 .tag {
 }
