@@ -49,6 +49,8 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 .page {
@@ -242,13 +244,18 @@ a:focus {
 .header__social-wrap {
   margin-top: 20px;
   width: 100%;
-  gap: 50px;
+  gap: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+@media (max-width: 576px) {
+  .header__social-wrap {
+    gap: 50px;
+  }
 }
 .header__main-wrap {
   height: 100%;
@@ -300,6 +307,11 @@ a:focus {
   display: block;
   padding: 5px;
   color: inherit;
+}
+@media (max-width: 576px) {
+  .nav__link {
+    font-size: 24px;
+  }
 }
 .nav__link_bold {
   font-weight: 700;
@@ -453,5 +465,7 @@ a:focus {
 
 .main {
   background-color: #050D19;
+  height: 100vh;
+  color: var(--main-text);
 }
 /*# sourceMappingURL=main.css.map */

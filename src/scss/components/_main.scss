@@ -1,3 +1,55 @@
 .main {
   background-color: #050D19;
+  height: 100vh;
+  color: var(--main-text);
+		// .main__container
+		&__container {
+		}
+		// .main__header
+		&__header {
+		}
+		// .main__content
+		&__content {
+		}
+		// .main__list
+		&__list {
+		}
+		// .main__item
+		&__item {
+		}
+}
+.container {
+}
+.list-reset {
+}
+.card {
+		// .card__image
+		&__image {
+		}
+		// .card__img
+		&__img {
+		}
+		// .card__content
+		&__content {
+		}
+		// .card__title
+		&__title {
+		}
+		// .card__technologic-tags
+		&__technologic-tags {
+		}
+		// .card__desc
+		&__desc {
+		}
+		// .card__buttons
+		&__buttons {
+		}
+		// .card__code
+		&__code {
+		}
+		// .card__demo
+		&__demo {
+		}
+}
+.tag {
 }
