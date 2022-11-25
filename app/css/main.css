@@ -82,6 +82,10 @@ a:focus {
 
 .site-container {
   overflow: hidden;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 .is-hidden {
@@ -158,6 +162,7 @@ a:focus {
   width: 100%;
   background-color: #252934;
   height: 100vh;
+  scroll-snap-align: start;
 }
 .header__h1 {
   margin: 0;
@@ -346,7 +351,6 @@ a:focus {
 }
 
 .burger {
-  display: none;
   --burger-width: 30px;
   --burger-height: 30px;
   --burger-line-height: 2px;
@@ -358,6 +362,7 @@ a:focus {
   color: #000;
   background-color: transparent;
   cursor: pointer;
+  display: none;
   color: var(--main-text);
   z-index: 2;
 }
@@ -431,7 +436,7 @@ a:focus {
 @media (max-width: 576px) {
   .burger {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
   }
@@ -439,12 +444,13 @@ a:focus {
 
 .menu--active {
   display: block;
+  position: fixed;
   top: 0;
   right: 0;
   width: 100vw;
   height: 100vh;
   padding: 0;
-  background-color: #050D1A;
+  background-color: #050d1a;
 }
 
 .menu--active .nav__list {
@@ -468,6 +474,7 @@ a:focus {
   height: 100vh;
   padding: 50px 0;
   color: var(--main-text);
+  scroll-snap-align: start;
 }
 .main__header {
   font-style: normal;
@@ -486,5 +493,10 @@ a:focus {
 }
 .card {
   width: 400px;
+}
+.footer {
+  height: 100vh;
+  background-color: red;
+  scroll-snap-align: start;
 }
 /*# sourceMappingURL=main.css.map */
