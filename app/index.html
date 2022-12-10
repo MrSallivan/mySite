@@ -16,42 +16,43 @@
 
 <body class="page__body">
   <div class="site-container">
-    <header class="header">
-  <canvas id="canvas" width="1280" height="963"></canvas>
+    <header class="header" id="header">
+   <canvas id="canvas" width="1280" height="963"></canvas>
 
-  <div class="container header__container">
-    <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
-      <span class="burger__line"></span>
-    </button>
-    <nav class="header__nav nav" title="" data-menu>
-      <ul class="nav__list list-reset">
-        <li class="nav__item" data-menu-item><a href="#" class="nav__link nav__link_bold">Home</a></li>
-        <li class="nav__item" data-menu-item><a href="#projects" class="nav__link">Projects</a></li>
-        <li class="nav__item" data-menu-item><a href="#" class="nav__link">About me</a></li>
-        <li class="nav__item" data-menu-item><a href="#" class="nav__link">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="header__main-wrap">
-      <div class="header__wrap">
-        <h1 class="header__h1">I’m Alex Nikolaenko</h1>
-        <p class="header__text"><span class="header__text_akc">Frontend Developer and Designer.</span> I learn and teach
-          everything about Web Technologies and Product Design.</p>
+   <div class="container header__container">
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+         <span class="burger__line"></span>
+      </button>
+      <nav class="header__nav nav" title="" data-menu>
+         <ul class="nav__list list-reset">
+            <li class="nav__item" data-menu-item><a href="#header" class="nav__link nav__link_bold">Home</a></li>
+            <li class="nav__item" data-menu-item><a href="#projects" class="nav__link">Projects</a></li>
+            <li class="nav__item" data-menu-item><a href="#about" class="nav__link">About me</a></li>
+            <li class="nav__item" data-menu-item><a href="#contacts" class="nav__link">Contact</a></li>
+         </ul>
+      </nav>
+      <div class="header__main-wrap">
+         <div class="header__wrap">
+            <h1 class="header__h1">I’m Alex Nikolaenko</h1>
+            <p class="header__text"><span class="header__text_akc">Frontend Developer and Designer.</span> I learn and
+               teach
+               everything about Web Technologies and Product Design.</p>
+         </div>
+         <div class="header__social-wrap">
+            <ul class="header__social social list-reset" title="social on main page">
+               <li class="social__item"><a href="#" target="_blank" class="social__link social__link--git"
+                     aria-label="Наша страничка в Фейсбуке"></a></li>
+               <li class="social__item"><a href="#" target="_blank" class="social__link social__link--inst"
+                     aria-label="Наша страничка во Вконтакте"></a></li>
+               <li class="social__item"><a href="#" target="_blank" class="social__link social__link--tw"
+                     aria-label="Наша страничка в Твиттере"></a></li>
+            </ul>
+            <a href="#" class="header__cv">
+               <img class="header__cv-icon" src="../img/svg/paper-clip.svg" alt="paper-clip" />
+               Download CV</a>
+         </div>
       </div>
-      <div class="header__social-wrap">
-        <ul class="header__social social list-reset" title="social on main page">
-          <li class="social__item"><a href="#" target="_blank" class="social__link social__link--git"
-              aria-label="Наша страничка в Фейсбуке"></a></li>
-          <li class="social__item"><a href="#" target="_blank" class="social__link social__link--inst"
-              aria-label="Наша страничка во Вконтакте"></a></li>
-          <li class="social__item"><a href="#" target="_blank" class="social__link social__link--tw"
-              aria-label="Наша страничка в Твиттере"></a></li>
-        </ul>
-        <a href="#" class="header__cv">
-          <img class="header__cv-icon" src="../img/svg/paper-clip.svg" alt="paper-clip" />
-          Download CV</a>
-      </div>
-    </div>
-  </div>
+   </div>
 </header>
 
     <main class="main" id="projects">
@@ -62,7 +63,7 @@
         <li class="main__item">
           <div class="card">
             <div class="card__image">
-              <img src="#" alt="card-title" class="card__img">
+              <img src="./img/cards/card1.png" alt="card-title" class="card__img">
             </div>
             <div class="card__content">
               <h3 class="card__title">Лэндинг по продаже жалюзи</h3>
@@ -84,7 +85,7 @@
         <li class="main__item">
           <div class="card">
             <div class="card__image">
-              <img src="#" alt="card-title" class="card__img">
+              <img src="./img/cards/card2.png" alt="card-title" class="card__img">
             </div>
             <div class="card__content">
               <h3 class="card__title">Лэндинг по продаже жалюзи</h3>
@@ -106,7 +107,7 @@
         <li class="main__item">
           <div class="card">
             <div class="card__image">
-              <img src="#" alt="card-title" class="card__img">
+              <img src="./img/cards/card3.png" alt="card-title" class="card__img">
             </div>
             <div class="card__content">
               <h3 class="card__title">Лэндинг по продаже жалюзи</h3>
@@ -131,7 +132,12 @@
   </div>
 </main>
 
-    <footer class="footer">
+    <section class="about" id="about">
+   <div class="about__container container"></div>
+
+</section>
+
+    <footer class="footer" id="contacts">
   <div class="container"></div>
 </footer>
 
